@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form</title>
+</head>
+<body>
+      <!-- Modal -->
+      <div class="modal" id="projectModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="projectModalLabel">Add a New Project</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="#" method="post" id="addproject">
+                <div class="input-group">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Project Title</span>
+                  <input type="text" class="form-control" name="title" placeholder="Example Project" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="input-group">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Project Image URL</span>
+                  <input type="text" class="form-control" name="imageUrl" placeholder="https://someplace.org/example.png" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Live Link</span>
+                  <input type="text" class="form-control" name="livelink" placeholder="https://github.io/exampleproject" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Github Link</span>
+                  <input type="text" class="form-control" name="gitrepo" placeholder="https://github.com/exampleproject.git" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Languanges</span>
+                  <input type="text" class="form-control" name="languanges" placeholder="HTML, CSS, Python, Javascript" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                  <button class="btn btn-secondary" type="submit">Save Project</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close Modal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>

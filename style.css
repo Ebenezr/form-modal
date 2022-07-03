@@ -1,0 +1,43 @@
+:root{
+    --clr-accent:#6C757D;
+    --clr-secondary:#E9ECEF;
+    --clr-pry:#808080;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--clr-pry);
+}
+.modal{
+    width: 60ch;
+    height: 65ch;
+    background-color: #fff;
+}
+.modal-body{
+    padding: 1rem;
+
+}
+.input-group{
+    width: 100%;
+    border: 0.1rem solid var(--clr-pry);
+    border-radius: 0.2rem;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.input-group-text{
+    display: inline-block;
+    background-color:var(--clr-secondary);
+    
+}
