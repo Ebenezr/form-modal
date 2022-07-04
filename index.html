@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Form</title>
 </head>
 <body>
+    <!-- modal call button -->
+    <div>
+        <button class="btn" id="add-project">add project</button>
+    </div>
       <!-- Modal -->
-      <div class="modal" id="projectModal" aria-hidden="true">
+      <div class="modal hidden" id="projectModal" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="projectModalLabel">Add a New Project</h5>
-              <button type="button" class="btn-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+              <button type="button" class="btn-close close-modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="modal-body">
               <form action="#" method="post" id="addproject">
@@ -40,16 +44,16 @@
                   <input type="text" class="form-control" name="languanges" placeholder="HTML, CSS, Python, Javascript" >
                 </div>
                 <div class="btn-wrapper" >
-                  <button class="btn btn-secondary" type="submit">Save Project</button>
+                  <button class="btn btn-secondary" type="submit" >Save Project</button>
                 </div>
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close Modal</button>
+              <button type="button" class="btn btn-outline-secondary close-modal">Close Modal</button>
             </div>
           </div>
         </div>
       </div>
-    
+    <script src="./src/main.js"></script>
 </body>
 </html>
